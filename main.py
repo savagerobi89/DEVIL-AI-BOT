@@ -30,7 +30,7 @@ def main():
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CommandHandler("stop", stop))
 
-    # প্রতি ১ মিনিটে সিগনাল পাঠাবে
+    # এখানে job_queue সেট করতে হবে
     job_queue = app.job_queue
     job_queue.run_repeating(send_signal, interval=60, first=10)
 
