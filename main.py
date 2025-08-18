@@ -1,3 +1,5 @@
+from keep_alive import keep_alive
+keep_alive()
 import os
 from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes
@@ -44,3 +46,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
